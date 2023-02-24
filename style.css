@@ -440,6 +440,7 @@ input {
 
     .text__title--mob {
         display: block;
+        font-size: 35px;
     }
     .text__subtitle--mob {
         display: block;
@@ -593,11 +594,12 @@ input {
     font-size: 8px;
 }
     .additional-info {
-        position: relative;
+        position: absolute;
         bottom: 0;
         display: flex;
         padding-left: 0;
         justify-content: center;
+        margin-top: 20px;
     }
     
     .additional-info__copyright {
