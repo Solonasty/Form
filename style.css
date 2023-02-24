@@ -7,7 +7,9 @@
     font-family: GHEAGrapalat;
     src: url(assets/fonts/gheagrapalat.otf);
 }
-
+::-webkit-scrollbar {
+  width: 0;
+}
 html {
     font-size: 15px;
     overflow-x:hidden;
