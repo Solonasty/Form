@@ -13,11 +13,12 @@
 html {
     font-size: 15px;
     overflow-x:hidden;
+	    overflow-y:hidden;
 }
 
 body {
     margin: 0;
-    overflow-y:hidden;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
