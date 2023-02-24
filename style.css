@@ -8,18 +8,16 @@
     src: url(assets/fonts/gheagrapalat.otf);
 }
 ::-webkit-scrollbar {
-  width: 0;
-}
+    width: 0;
+  }
 html {
     font-size: 15px;
-overflow: hiddenж
-
-ё
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 body {
     margin: 0;
-
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -553,7 +551,9 @@ input {
 
 @media (max-width: 350px) {
 
-
+.container {
+    padding-top: 0;
+}
 
     .text__title--mob {
         display: block;
@@ -588,6 +588,7 @@ input {
     }
 .form__submition {
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .btn {
@@ -598,12 +599,12 @@ input {
     font-size: 8px;
 }
     .additional-info {
-        position: absolute;
+        /* position: absolute; */
         bottom: 0;
         display: flex;
         padding-left: 0;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 50px;
     }
     
     .additional-info__copyright {
