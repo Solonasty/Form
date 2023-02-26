@@ -497,3 +497,46 @@ input[type="submit" ]:hover {
     }
 }
 
+@media (max-width: 321px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .text__title--mob {
+        font-size: 25px;
+    }
+
+    .text__subtitle--mob {
+        font-size: 12px;
+    }
+
+    .form {
+        padding: 10px 0;
+    }
+
+    input {
+        margin: .5rem 0;
+    }
+
+    .form__submition {
+        margin-top: 20px;
+    }
+
+    .submition__text {
+        font-size: 8px;
+    }
+
+    .additional-info {
+        margin-top: 50px;
+    }
+
+    .additional-info__copyright {
+        font-size: 10px;
+    }
+
+    .additional-info__policy {
+        font-size: 10px;
+    }
+}
+
