@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6, p {
 .text__title--mob {
     display: none;
 }
+
 .text__subtitle--mob {
     display: none;
 }
@@ -122,8 +123,9 @@ input {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 300;
-    background-color: transparent;
+    background-color: rgba(33, 53, 75, 1);
     text-transform: uppercase;
+    color: #EEEBE6;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -260,6 +262,11 @@ input[type="submit" ] {
     border: 1px solid rgba(238, 235, 230, 1);
     border-radius: 70px;
     text-transform: uppercase;
+}
+
+input[type="submit" ]:hover {
+    background-color: rgba(238, 235, 230, 0.316);
+    transition: background-color .2s linear;
 }
 
 .form__submition {
