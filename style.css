@@ -404,7 +404,6 @@ input[type="submit" ]:hover {
     .container {
         padding: 10px;
     }
-
 }
 
 @media (max-width: 500px) {
@@ -437,6 +436,11 @@ input[type="submit" ]:hover {
 
     .temp-item__label {
         bottom: 15px;
+    }
+
+    input[type="submit" ] {
+        width: 130px;
+        padding: 1rem;
     }
 
     .additional-info {
