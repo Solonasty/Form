@@ -247,7 +247,8 @@ input {
 
 /* BTN */
 
-.btn {
+input[type="submit" ] {
+    width: 173px;
     border: none;
     color: #fff;
     padding: 1rem 4rem;
@@ -323,9 +324,6 @@ input {
 
     .form {
         margin-left: 5px;
-    }
-    .btn {
-        padding: 1rem 2.5rem;
     }
 
     .submition__text {
