@@ -48,10 +48,9 @@ function store(event) {
         localStorage.setItem('temp', temp.value);
         localStorage.setItem('comments', comments.value);
         console.log('Done');
-        alert('We will call you soon');
+        alert('We will call you soon!');
         name.value = '';
         tel.value = '';
-        temp.value = '30';
         comments.value = '';
     }
 }
