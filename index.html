@@ -43,8 +43,8 @@
                         <label for="name"></label>
                         <input type="text" placeholder="NAME" name="name" id="name" required>
 
-                        <label for="phone"></label>
-                        <input type="text" placeholder="PHONE" name="phone" id="phone" required>
+                        <label for="tel"></label>
+                        <input type="tel" class="tel"placeholder="PHONE" name="tel" id="tel" pattern = "/(\+7|8)[\s(]?(\d{3})[\s)]?(\d{3})[\s-]?(\d{2})[\s-]?(\d{2})/g" required>
 
                         <div class="temp-item">
                             <label for="temp" class="temp-item__label">TEMP</label>
@@ -58,7 +58,7 @@
                         <input type="text" id= "comments" placeholder="COMMENTS" required>
 
                         <div class="form__submition submition">
-                            <button type="submit" class="btn" id="btn">Call me</button>
+                            <input type="submit" class="btn" id="btn" value="CALL ME">
                             <p class="submition__text">By pressing "send" button<br>i agree with <a class="link" src="">privacy policy</a></p>
                         </div>
 
