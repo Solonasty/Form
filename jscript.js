@@ -1,12 +1,11 @@
-const sliderProps = {
+//TEMPERATURE SLIDER
+
+let sliderProps = {
 	fill: "rgba(255, 105, 180, 1)",
 	background: "rgba(91, 170, 249, 1)",
 };
 
-// Selecting the Range Slider container which will effect the LENGTH property of the password.
-const slider = document.querySelector(".range__slider");
-
-// Text which will show the value of the range slider.
+let slider = document.querySelector(".range__slider");
 const sliderValue = document.querySelector(".length__title");
 
 // Using Event Listener to apply the fill and also change the value of the text.
@@ -16,10 +15,11 @@ slider.querySelector("input").addEventListener("input", event => {
 });
 // Selecting the range input and passing it in the applyFill func.
 applyFill(slider.querySelector("input"));
+
 // This function is responsible to create the trailing color and setting the fill.
 function applyFill(slider) {
-	const percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
-	const bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage +
+	let percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
+	let bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage +
 			0.1}%)`;
 	slider.style.background = bg;
 	sliderValue.setAttribute("data-length", slider.value);
@@ -31,7 +31,7 @@ function applyFill(slider) {
 let btn = document.getElementById('btn');
 btn.addEventListener('click', store);
 
-function store(event){
+function store(event) {
     event.preventDefault();
     let name = document.getElementById('name');
     let tel = document.getElementById('tel');
@@ -43,28 +43,30 @@ function store(event){
 
     }else if(tel.value.length == 0){
         alert('Please fill in phone number');
-
     }else{
-
         localStorage.setItem('name', name.value);
         localStorage.setItem('tel', tel.value);
         localStorage.setItem('temp', temp.value);
         localStorage.setItem('comments', comments.value);
-        console.log('Your account has been created');
-    // }
-}
+        console.log('Done');
+        alert('We will call you soon');
+        name.value = '';
+        tel.value = '';
+        temp.value = '30';
+        comments.value = '';
+    }
 }
 
+//PHONE NUMBER
 
-// let phone = document.getElementById('phone');
 window.addEventListener("DOMContentLoaded", function() {
     [].forEach.call( document.querySelectorAll('.tel'), function(input) {
     var keyCode;
     function mask(event) {
         event.keyCode && (keyCode = event.keyCode);
-        var pos = this.selectionStart;
+        let pos = this.selectionStart;
         if (pos < 3) event.preventDefault();
-        var matrix = "+7 (___) ___ - __ - __",
+        let matrix = "+7 (___) ___ - __ - __",
             i = 0,
             def = matrix.replace(/\D/g, ""),
             val = this.value.replace(/\D/g, ""),
@@ -76,7 +78,7 @@ window.addEventListener("DOMContentLoaded", function() {
             i < 5 && (i = 3);
             new_value = new_value.slice(0, i)
         }
-        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+        let reg = matrix.substr(0, this.value.length).replace(/_+/g,
             function(a) {
                 return "\\d{1," + a.length + "}"
             }).replace(/[+()]/g, "\\$&");
