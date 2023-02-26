@@ -262,16 +262,12 @@ input[type="submit" ] {
     border: 1px solid rgba(238, 235, 230, 1);
     border-radius: 70px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 input[type="submit" ]:hover {
     background-color: rgba(238, 235, 230, 0.316);
     transition: background-color .2s linear;
-}
-
-.form__submition {
-    display: flex;
-    justify-content: space-between;
 }
 
 .submition__text {
@@ -385,6 +381,10 @@ input[type="submit" ]:hover {
         margin: 0 auto;
     }
 
+    .form__submition {
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -453,7 +453,7 @@ input[type="submit" ]:hover {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 400px) {
 
     .container {
         padding: 20px;
