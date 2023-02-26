@@ -23,7 +23,6 @@ function applyFill(slider) {
 			0.1}%)`;
 	slider.style.background = bg;
 	sliderValue.setAttribute("data-length", slider.value);
-    console.log(slider.value)
 }
 
 // REGISTRATION
