@@ -6,7 +6,7 @@ let sliderProps = {
 };
 
 let slider = document.querySelector(".range__slider");
-const sliderValue = document.querySelector(".length__title");
+let sliderValue = document.querySelector(".length__title");
 
 // Using Event Listener to apply the fill and also change the value of the text.
 slider.querySelector("input").addEventListener("input", event => {
